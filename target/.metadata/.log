@@ -16,3 +16,18 @@ Command-line arguments:  -data /home/athul-muralidhar/udemy-embedded-c-course/ta
 
 !ENTRY org.eclipse.cdt.core 1 0 2024-05-12 15:38:04.266
 !MESSAGE Indexed 'testproj1' (3 sources, 53 headers) in 1.21 sec: 1,950 declarations; 2,836 references; 0 unresolved inclusions; 2 syntax errors; 2 unresolved names (0.042%)
+!SESSION 2024-05-15 18:17:57.220 -----------------------------------------------
+eclipse.buildId=Version 1.15.1
+java.version=17.0.8.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2024-05-15 18:18:03.408
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-05-15 18:18:03.409
+!MESSAGE Log4j2 initialized with config file /home/athul-muralidhar/udemy-embedded-c-course/target/.metadata/.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-05-15 18:18:12.824
+!MESSAGE Started RMI Server, listening on port 41337
