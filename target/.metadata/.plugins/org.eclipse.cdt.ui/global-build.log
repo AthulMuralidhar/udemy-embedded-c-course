@@ -1,7 +1,14 @@
-18:18:24 **** Incremental Build of configuration Debug for project testproj1 ****
+22:21:54 **** Incremental Build of configuration Debug for project helloworld ****
 make -j16 all 
-arm-none-eabi-size  testproj1.elf 
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc -o "helloworld.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/athul-muralidhar/udemy-embedded-c-course/target/helloworld/STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="helloworld.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: helloworld.elf
+ 
+arm-none-eabi-size  helloworld.elf 
+arm-none-eabi-objdump -h -S helloworld.elf  > "helloworld.list"
    text	   data	    bss	    dec	    hex	filename
-    652	      0	   1568	   2220	    8ac	testproj1.elf
+   4880	     92	   1900	   6872	   1ad8	helloworld.elf
 Finished building: default.size.stdout
+ 
+Finished building: helloworld.list
  

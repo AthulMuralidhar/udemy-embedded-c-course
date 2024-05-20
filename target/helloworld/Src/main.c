@@ -22,19 +22,11 @@
   #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use."
 #endif
 
-/*
- * so there is the above warning that is displayed usually - to get rid of it:
- * right click on the project in the project explorer
- * and select properties
- * go to c/c++ build > settings
- * on the right you find MCU settings
- * in that there is a menu option: Floating point unit - select none from the drop down
- * under that there is floating point abi - select "software implementation"
- * close and save the warning should be gone now
- */
+#include <stdio.h>
 
 int main(void)
 {
+	printf("how");
     /* Loop forever */
 	for(;;);
 }
