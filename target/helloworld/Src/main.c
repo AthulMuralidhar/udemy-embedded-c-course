@@ -26,7 +26,7 @@
 
 int main(void)
 {
-	printf("how");
+	printf("how\n");
     /* Loop forever */
 	for(;;);
 }
