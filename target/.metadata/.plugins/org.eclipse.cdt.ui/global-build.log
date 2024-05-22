@@ -1,28 +1,125 @@
-23:30:24 **** Incremental Build of configuration Debug for project helloworld ****
+21:38:56 **** Incremental Build of configuration Debug for project helloworld ****
 make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -v -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -v -fstack-usage -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -v -fstack-usage -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/sysmem.o"
+Using built-in specs.
+Reading specs from /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/nano.specs
+rename spec link to nano_link
+rename spec link_gcc_c_sequence to nano_link_gcc_c_sequence
+rename spec cpp_unique_options to nano_cpp_unique_options
+Using built-in specs.
+Reading specs from /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/nano.specs
+rename spec link to nano_link
+rename spec link_gcc_c_sequence to nano_link_gcc_c_sequence
+rename spec cpp_unique_options to nano_cpp_unique_options
+COLLECT_GCC=arm-none-eabi-gcc
+Target: arm-none-eabi
+Configured with: ../configure --build=x86_64-linux-gnu --prefix=/usr --includedir='/usr/lib/include' --mandir='/usr/lib/share/man' --infodir='/usr/lib/share/info' --sysconfdir=/etc --localstatedir=/var --disable-option-checking --disable-silent-rules --libdir='/usr/lib/lib/x86_64-linux-gnu' --libexecdir='/usr/lib/lib/x86_64-linux-gnu' --disable-maintainer-mode --disable-dependency-tracking --mandir=/usr/share/man --enable-languages=c,c++,lto --enable-multilib --disable-decimal-float --disable-libffi --disable-libgomp --disable-libmudflap --disable-libquadmath --disable-libssp --disable-libstdcxx-pch --disable-nls --disable-shared --disable-threads --enable-tls --build=x86_64-linux-gnu --target=arm-none-eabi --with-system-zlib --with-gnu-as --with-gnu-ld --with-pkgversion=15:13.2.rel1-2 --without-included-gettext --prefix=/usr/lib --infodir=/usr/share/doc/gcc-arm-none-eabi/info --htmldir=/usr/share/doc/gcc-arm-none-eabi/html --pdfdir=/usr/share/doc/gcc-arm-none-eabi/pdf --bindir=/usr/bin --libexecdir=/usr/lib --libdir=/usr/lib --disable-libstdc++-v3 --host=x86_64-linux-gnu --with-headers=no --without-newlib --with-multilib-list=rmprofile,aprofile ASFLAGS= ASFLAGS_FOR_BUILD= CFLAGS='-g -O2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -ffile-prefix-map=/build/gcc-arm-none-eabi-TuTZN0/gcc-arm-none-eabi-13.2.rel1=. -flto=auto -ffat-lto-objects -fstack-protector-strong -fstack-clash-protection -Wno-format -Wno-error=format-security -fcf-protection -fdebug-prefix-map=/build/gcc-arm-none-eabi-TuTZN0/gcc-arm-none-eabi-13.2.rel1=/usr/src/gcc-arm-none-eabi-15:13.2.rel1-2' 'CFLAGS_FOR_BUILD=-g -O2' CPPFLAGS='-Wdate-time -D_FORTIFY_SOURCE=3' CPPFLAGS_FOR_BUILD= CXXFLAGS='-g -O2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -ffile-prefix-map=/build/gcc-arm-none-eabi-TuTZN0/gcc-arm-none-eabi-13.2.rel1=. -flto=auto -ffat-lto-objects -fstack-protector-strong -fstack-clash-protection -Wno-format -Wno-error=format-security -fcf-protection -fdebug-prefix-map=/build/gcc-arm-none-eabi-TuTZN0/gcc-arm-none-eabi-13.2.rel1=/usr/src/gcc-arm-none-eabi-15:13.2.rel1-2' 'CXXFLAGS_FOR_BUILD=-g -O2' DFLAGS=-frelease DFLAGS_FOR_BUILD=-frelease FCFLAGS='-g -O2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -ffile-prefix-map=/build/gcc-arm-none-eabi-TuTZN0/gcc-arm-none-eabi-13.2.rel1=. -flto=auto -ffat-lto-objects -fstack-protector-strong -fstack-clash-protection -fcf-protection -fdebug-prefix-map=/build/gcc-arm-none-eabi-TuTZN0/gcc-arm-none-eabi-13.2.rel1=/usr/src/gcc-arm-none-eabi-15:13.2.rel1-2' 'FCFLAGS_FOR_BUILD=-g -O2' FFLAUsing built-in specs.
+GS='-g -O2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -ffile-prefix-map=/build/gcc-arm-none-eabi-TuTZN0/gcc-arm-none-eabi-13.2.rel1=. -flto=auto -ffat-lto-objects -fstack-protector-strong -fstack-clash-protection -fcf-protection -fdebug-prefix-map=/build/gcc-arm-none-eabi-TuTZN0/gcc-arm-none-eabi-13.2.rel1=/usr/src/gcc-arm-none-eabi-15:13.2.rel1-2' 'FFLAGS_FOR_BUILD=-g -O2' LDFLAGS='-Wl,-Bsymbolic-functions -flto=auto -ffat-lto-objects -Wl,-z,relro' LDFLAGS_FOR_BUILD= OBJCFLAGS='-g -O2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -ffile-prefix-map=/build/gcc-arm-none-eabi-TuTZN0/gcc-arm-none-eabi-13.2.rel1=. -flto=auto -ffat-lto-objects -fstack-protector-strong -fstack-clash-protection -Wno-format -Wno-error=format-security -fcf-protection -fdebug-prefix-map=/build/gcc-arm-none-eabi-TuTZN0/gcc-arm-none-eabi-13.2.rel1=/usr/src/gcc-arm-none-eabi-15:13.2.rel1-2' 'OBJCFLAGS_FOR_BUILD=-g -O2' OBJCXXFLAGS='-g -O2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -ffile-prefix-map=/build/gcc-arm-none-eabi-TuTZN0/gcc-arm-none-eabi-13.2.rel1=. -flto=auto -ffat-lto-objects -fstack-protector-strong -fstack-clash-protection -Wno-format -Wno-error=format-security -fcf-protection -fdebug-prefix-map=/build/gcc-arm-none-eabi-TuTZN0/gcc-arm-none-eabi-13.2.rel1=/usr/src/gcc-arm-none-eabi-15:13.2.rel1-2' 'OBJCXXFLAGS_FOR_BUILD=-g -O2' INHIBIT_LIBC_CFLAGS=-DUSE_TM_CLONE_REGISTRY=0 AR_FOR_TARGET=arm-none-eabi-ar AS_FOR_TARGET=arm-none-eabi-as LD_FOR_TARGET=arm-none-eabi-ld NM_FOR_TARGET=arm-none-eabi-nm OBJDUMP_FOR_TARGET=arm-none-eabi-objdump RANLIB_FOR_TARGET=arm-none-eabi-ranlib READELF_FOR_TARGET=arm-none-eabi-readelf STRIP_FOR_TARGET=arm-none-eabi-strip SED=/bin/sed SHELL=/bin/sh BASH=/bin/bash CONFIG_SHELL=/bin/bash
+Thread model: single
+Supported LTO compression algorithms: zlib
+gcc version 13.2.1 20231009 (15:13.2.rel1-2) 
+Reading specs from /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/nano.specs
+rename spec link to nano_link
+rename spec link_gcc_c_sequence to nano_link_gcc_c_sequence
+rename spec cpp_unique_options to nano_cpp_unique_options
+COLLECT_GCC=arm-none-eabi-gcc
+Target: arm-none-eabi
+Configured with: ../configure --build=x86_64-linux-gnu --prefix=/usr --includedir='/usr/lib/include' --mandir='/usr/lib/share/man' --infodir='/usr/lib/share/info' --sysconfdir=/etc --localstatedir=/var --disable-option-checking --disable-silent-rules --libdir='/usr/lib/lib/x86_64-linux-gnu' --libexecdir='/usr/lib/lib/x86_64-linux-gnu' --disable-maintainer-mode --disable-dependency-tracking --mandir=/usr/share/man --enable-languages=c,c++,lto --enable-multilib --disable-decimal-float --disable-libffi --disable-libgomp --disable-libmudflap --disable-libquadmath --disable-libssp --disable-libstdcxx-pch --disable-nls --disable-shared --disable-threads --enable-tls --build=x86_64-linux-gnu --target=arm-none-eabi --with-system-zlib --with-gnu-as --with-gnu-ld --with-pkgversion=15:13.2.rel1-2 --without-included-gettext --prefix=/usr/lib --infodir=/usr/share/doc/gcc-arm-none-eabi/info --htmldir=/usr/share/doc/gcc-arm-none-eabi/html --pdfdir=/usr/share/doc/gcc-arm-none-eabi/pdf --bindir=/usr/bin --libexecdir=/usr/lib --libdir=/usr/lib --disable-libstdc++-v3 --host=x86_64-linux-gnu --with-headers=no --without-newlib --with-multilib-list=rmprofile,aprofile ASFLAGS= ASFLAGS_FOR_BUILD= CFLAGS='-g -O2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -ffile-prefix-map=/build/gcc-arm-none-eabi-TuTZN0/gcc-arm-none-eabi-13.2.rel1=. -flto=auto -ffat-lto-objects -fstack-protector-strong -fstack-clash-protection -Wno-format -Wno-error=format-security -fcf-protection -fdebug-prefix-map=/build/gcc-arm-none-eabi-TuTZN0/gcc-arm-none-eabi-13.2.rel1=/usr/src/gcc-arm-none-eabi-15:13.2.rel1-2' 'CFLAGS_FOR_BUILD=-g -O2' CPPFLAGS='-Wdate-time -D_FORTIFY_SOURCE=3' CPPFLAGS_FOR_BUILD= CXXFLAGS='-g -O2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -ffile-prefix-map=/build/gcc-arm-none-eabi-TuTZN0/gcc-arm-none-eabi-13.2.rel1=. -flto=auto -ffat-lto-objects -fstack-protector-strong -fstack-clash-protection -Wno-format -Wno-error=format-security -fcf-protection -fdebug-prefix-map=/build/gcc-arm-none-eabi-TuTZN0/gcc-arm-none-eabi-13.2.rel1=/usr/src/gcc-arm-none-eabi-15:13.2.rel1-2' 'CXXFLAGS_FOR_BUILD=-g -O2' DFLAGS=-frelease DFLAGS_FOR_BUILD=-frelease FCFLAGS='-g -O2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -ffile-prefix-map=/build/gcc-arm-none-eabi-TuTZN0/gcc-arm-none-eabi-13.2.rel1=. -flto=auto -ffat-lto-objects -fstack-protector-strong -fstack-clash-protection -fcf-protection -fdebug-prefix-map=/build/gcc-arm-none-eabi-TuTZN0/gcc-arm-none-eabi-13.2.rel1=/usr/src/gcc-arm-none-eabi-15:13.2.rel1-2' 'FCFLAGS_FOR_BUILD=-g -O2' FFLAGS='-g -O2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -ffile-prefix-map=/build/gcc-arm-none-eabi-TuTZN0/gcc-arm-none-eabi-13.2.rel1=. -flto=auto -ffat-lto-objects -fstack-protector-strong -fstack-clash-protection -fcf-protection -fdebug-prefix-map=/build/gcc-arm-none-eabi-TuTZN0/gcc-arm-none-eabi-13.2.rel1=/usr/src/gcc-arm-none-eabi-15:13.2.rel1-2' 'FFLAGS_FOR_BUILD=-g -O2' LDFLAGS='-Wl,-Bsymbolic-functions -flto=auto -ffat-lto-objects -Wl,-z,relro' LDFLAGS_FOR_BUILD= OBJCFLAGS='-g -O2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -ffile-prefix-map=/build/gcc-arm-none-eabi-TuTZN0/gcc-arm-none-eabi-13.2.rel1=. -flto=auto -ffat-lto-objects -fstack-protector-strong -fstack-clash-protection -Wno-format -Wno-error=format-security -fcf-protection -fdebug-prefix-map=/build/gcc-arm-none-eabi-TuTZN0/gcc-arm-none-eabi-13.2.rel1=/usr/src/gcc-arm-none-eabi-15:13.2.rel1-2' 'OBJCFLAGS_FOR_BUILD=-g -O2' OBJCXXFLAGS='-g -O2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -ffile-prefix-map=/build/gcc-arm-none-eabi-TuTZN0/gcc-arm-none-eabi-13.2.rel1=. -flto=auto -ffat-lto-objects -fstack-protector-strong -fstack-clash-protection -Wno-format -Wno-error=format-security -fcf-protection -fdebug-prefix-map=/build/gcc-arm-none-eabi-TuTZN0/gcc-arm-none-eabi-13.2.rel1=/usr/src/gcc-arm-none-eabi-15:13.2.rel1-2' 'OBJCXXFLAGS_FOR_BUILD=-g -O2' INHIBIT_LIBC_CFLAGS=-DUSE_TM_CLONE_REGISTRY=0 AR_FOR_TARGET=arm-none-eabi-ar AS_FOR_TARGET=arm-none-eabi-as LD_FOR_TARGET=arm-none-eabi-ld NM_FOR_TARGET=arm-none-eabi-nm OBJDUMP_FOR_TARGET=arm-none-eabi-objdump RANLIB_FOR_TARGET=arm-none-eabi-ranlib READELF_FOR_TARGET=arm-none-eabi-readelf STRIP_FOR_TARGET=arm-none-eabi-strip SED=/bin/sed SHELL=/bin/sh BASH=/bin/bash CONFIG_SHELL=/bin/bash
+Thread model: single
+Supported LTO compression algorithms: zlib
+gcc version 13.2.1 20231009 (15:13.2.rel1-2) 
+COLLECT_GCC_OPTIONS='-mcpu=cortex-m4' '-std=gnu11' '-g3' '-D' 'DEBUG' '-D' 'STM32' '-D' 'STM32F4' '-D' 'STM32F407VGTx' '-c' '-I' '../Inc' '-O0' '-ffunction-sections' '-fdata-sections' '-Wall' '-v' '-fstack-usage' '-MMD' '-MP' '-MF' 'Src/main.d' '-MT' 'Src/main.o' '-specs=nano.specs' '-mfloat-abi=soft' '-mthumb' '-o' 'Src/main.o' '-mlibarch=armv7e-m' '-march=armv7e-m' '-dumpdir' 'Src/'
+ /usr/lib/gcc/arm-none-eabi/13.2.1/cc1 -isystem /usr/include/newlib/nano -quiet -v -I ../Inc -imultilib thumb/v7e-m/nofp -MMD Src/main.d -MF Src/main.d -MP -MT Src/main.o -dD -D__USES_INITFINI__ -D DEBUG -D STM32 -D STM32F4 -D STM32F407VGTx ../Src/main.c -quiet -dumpdir Src/ -dumpbase main.c -dumpbase-ext .c -mcpu=cortex-m4 -mfloat-abi=soft -mthumb -mlibarch=armv7e-m -march=armv7e-m -g3 -O0 -Wall -std=gnu11 -version -ffunction-sections -fdata-sections -fstack-usage -o /tmp/ccJXF6OX.s
+COLLECT_GCC_OPTIONS='-mcpu=cortex-m4' '-std=gnu11' '-g3' '-D' 'DEBUG' '-D' 'STM32' '-D' 'STM32F4' '-D' 'STM32F407VGTx' '-c' '-I' '../Inc' '-O0' '-ffunction-sections' '-fdata-sections' '-Wall' '-v' '-fstack-usage' '-MMD' '-MP' '-MF' 'Src/syscalls.d' '-MT' 'Src/syscalls.o' '-specs=nano.specs' '-mfloat-abi=soft' '-mthumb' '-o' 'Src/syscalls.o' '-mlibarch=armv7e-m' '-march=armv7e-m' '-dumpdir' 'Src/'
+ /usr/lib/gcc/arm-none-eabi/13.2.1/cc1 -isystem /usr/include/newlib/nano -quiet -v -I ../Inc -imultilib thumb/v7e-m/nofp -MMD Src/syscalls.d -MF Src/syscalls.d -MP -MT Src/syscalls.o -dD -D__USES_INITFINI__ -D DEBUG -D STM32 -D STM32F4 -D STM32F407VGTx ../Src/syscalls.c -quiet -dumpdir Src/ -dumpbase syscalls.c -dumpbase-ext .c -mcpu=cortex-m4 -mfloat-abi=soft -mthumb -mlibarch=armv7e-m -march=armv7e-m -g3 -O0 -Wall -std=gnu11 -version -ffunction-sections -fdata-sections -fstack-usage -o /tmp/cc8bs7I1.s
+COLLECT_GCC=arm-none-eabi-gcc
+Target: arm-none-eabi
+Configured with: ../configure --build=x86_64-linux-gnu --prefix=/usr --includedir='/usr/lib/include' --mandir='/usr/lib/share/man' --infodir='/usr/lib/share/info' --sysconfdir=/etc --localstatedir=/var --disable-option-checking --disable-silent-rules --libdir='/usr/lib/lib/x86_64-linux-gnu' --libexecdir='/usr/lib/lib/x86_64-linux-gnu' --disable-maintainer-mode --disable-dependency-tracking --mandir=/usr/share/man --enable-languages=c,c++,lto --enable-multilib --disable-decimal-float --disable-libffi --disable-libgomp --disable-libmudflap --disable-libquadmath --disable-libssp --disable-libstdcxx-pch --disable-nls --disable-shared --disable-threads --enable-tls --build=x86_64-linux-gnu --target=arm-none-eabi --with-system-zlib --with-gnu-as --with-gnu-ld --with-pkgversion=15:13.2.rel1-2 --without-included-gettext --prefix=/usr/lib --infodir=/usr/share/doc/gcc-arm-none-eabi/info --htmldir=/usr/share/doc/gcc-arm-none-eabi/html --pdfdir=/usr/share/doc/gcc-arm-none-eabi/pdf --bindir=/usr/bin --libexecdir=/usr/lib --libdir=/usr/lib --disable-libstdc++-v3 --host=x86_64-linux-gnu --with-headers=no --without-newlib --with-multilib-list=rmprofile,aprofile ASFLAGS= ASFLAGS_FOR_BUILD= CFLAGS='-g -O2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -ffile-prefix-map=/build/gcc-arm-none-eabi-TuTZN0/gcc-arm-none-eabi-13.2.rel1=. -flto=auto -ffat-lto-objects -fstack-protector-strong -fstack-clash-protection -Wno-format -Wno-error=format-security -fcf-protection -fdebug-prefix-map=/build/gcc-arm-none-eabi-TuTZN0/gcc-arm-none-eabi-13.2.rel1=/usr/src/gcc-arm-none-eabi-15:13.2.rel1-2' 'CFLAGS_FOR_BUILD=-g -O2' CPPFLAGS='-Wdate-time -D_FORTIFY_SOURCE=3' CPPFLAGS_FOR_BUILD= CXXFLAGS='-g -O2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -ffile-prefix-map=/build/gcc-arm-none-eabi-TuTZN0/gcc-arm-none-eabi-13.2.rel1=. -flto=auto -ffat-lto-objects -fstack-protector-strong -fstack-clash-protection -Wno-format -Wno-error=format-security -fcf-protection -fdebug-prefix-map=/build/gcc-arm-none-eabi-TuTZN0/gcc-arm-none-eabi-13.2.rel1=/usr/src/gcc-arm-none-eabi-15:13.2.rel1-2' 'CXXFLAGS_FOR_BUILD=-g -O2' DFLAGS=-frelease DFLAGS_FOR_BUILD=-frelease FCFLAGS='-g -O2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -ffile-prefix-map=/build/gcc-arm-none-eabi-TuTZN0/gcc-arm-none-eabi-13.2.rel1=. -flto=auto -ffat-lto-objects -fstack-protector-strong -fstack-clash-protection -fcf-protection -fdebug-prefix-map=/build/gcc-arm-none-eabi-TuTZN0/gcc-arm-none-eabi-13.2.rel1=/usr/src/gcc-arm-none-eabi-15:13.2.rel1-2' 'FCFLAGS_FOR_BUILD=-g -O2' FFLAGS='-g -O2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -ffile-prefix-map=/build/gcc-arm-none-eabi-TuTZN0/gcc-arm-none-eabi-13.2.rel1=. -flto=auto -ffat-lto-objects -fstack-protector-strong -fstack-clash-protection -fcf-protection -fdebug-prefix-map=/build/gcc-arm-none-eabi-TuTZN0/gcc-arm-none-eabi-13.2.rel1=/usr/src/gcc-arm-none-eabi-15:13.2.rel1-2' 'FFLAGS_FOR_BUILD=-g -O2' LDFLAGS='-Wl,-Bsymbolic-functions -flto=auto -ffat-lto-objects -Wl,-z,relro' LDFLAGS_FOR_BUILD= OBJCFLAGS='-g -O2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -ffile-prefix-map=/build/gcc-arm-none-eabi-TuTZN0/gcc-arm-none-eabi-13.2.rel1=. -flto=auto -ffat-lto-objects -fstack-protector-strong -fstack-clash-protection -Wno-format -Wno-error=format-security -fcf-protection -fdebug-prefix-map=/build/gcc-arm-none-eabi-TuTZN0/gcc-arm-none-eabi-13.2.rel1=/usr/src/gcc-arm-none-eabi-15:13.2.rel1-2' 'OBJCFLAGS_FOR_BUILD=-g -O2' OBJCXXFLAGS='-g -O2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -ffile-prefix-map=/build/gcc-arm-none-eabi-TuTZN0/gcc-arm-none-eabi-13.2.rel1=. -flto=auto -ffat-lto-objects -fstack-protector-strong -fstack-clash-protection -Wno-format -Wno-error=format-security -fcf-protection -fdebug-prefix-map=/build/gcc-arm-none-eabi-TuTZN0/gcc-arm-none-eabi-13.2.rel1=/usr/src/gcc-arm-none-eabi-15:13.2.rel1-2' 'OBJCXXFLAGS_FOR_BUILD=-g -O2' INHIBIT_LIBC_CFLAGS=-DUSE_TM_CLONE_REGISTRY=0 AR_FOR_TARGET=arm-none-eabi-ar AS_FOR_TARGET=arm-none-eabi-as LD_FOR_TARGET=arm-none-eabi-ld NM_FOR_TARGET=arm-none-eabi-nm OBJDUMP_FOR_TARGET=arm-none-eabi-objdump RANLIB_FOR_TARGET=arm-none-eabi-ranlib READELF_FOR_TARGET=arm-none-eabi-readelf STRIP_FOR_TARGET=arm-none-eabi-strip SED=/bin/sed SHELL=/bin/sh BASH=/bin/bash CONFIG_SHELL=/bin/bash
+Thread model: single
+Supported LTO compression algorithms: zlib
+gcc version 13.2.1 20231009 (15:13.2.rel1-2) 
+COLLECT_GCC_OPTIONS='-mcpu=cortex-m4' '-std=gnu11' '-g3' '-D' 'DEBUG' '-D' 'STM32' '-D' 'STM32F4' '-D' 'STM32F407VGTx' '-c' '-I' '../Inc' '-O0' '-ffunction-sections' '-fdata-sections' '-Wall' '-v' '-fstack-usage' '-MMD' '-MP' '-MF' 'Src/sysmem.d' '-MT' 'Src/sysmem.o' '-specs=nano.specs' '-mfloat-abi=soft' '-mthumb' '-o' 'Src/sysmem.o' '-mlibarch=armv7e-m' '-march=armv7e-m' '-dumpdir' 'Src/'
+ /usr/lib/gcc/arm-none-eabi/13.2.1/cc1 -isystem /usr/include/newlib/nano -quiet -v -I ../Inc -imultilib thumb/v7e-m/nofp -MMD Src/sysmem.d -MF Src/sysmem.d -MP -MT Src/sysmem.o -dD -D__USES_INITFINI__ -D DEBUG -D STM32 -D STM32F4 -D STM32F407VGTx ../Src/sysmem.c -quiet -dumpdir Src/ -dumpbase sysmem.c -dumpbase-ext .c -mcpu=cortex-m4 -mfloat-abi=soft -mthumb -mlibarch=armv7e-m -march=armv7e-m -g3 -O0 -Wall -std=gnu11 -version -ffunction-sections -fdata-sections -fstack-usage -o /tmp/ccohbqNs.s
+GNU C11 (15:13.2.rel1-2) version 13.2.1 20231009 (arm-none-eabi)
+	compiled by GNU C version 13.2.0, GNU C11 (15:13.2.rel1-2) version 13.2.1 20231009 (arm-none-eabi)
+	compiled by GNU C version 13.2.0, GNU C11 (15:13.2.rel1-2) version 13.2.1 20231009 (arm-none-eabi)
+	compiled by GNU C version 13.2.0, GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version isl-0.26-GMP
+
+GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version isl-0.26-GMP
+
+GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version isl-0.26-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring nonexistent directory "/usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/sys-include"
+ignoring nonexistent directory "/usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/sys-include"
+ignoring nonexistent directory "/usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/sys-include"
+#include "..." search starts here:
+#include "..." search starts here:
+#include "..." search starts here:
+#include <...> search starts here:
+#include <...> search starts here:
+#include <...> search starts here:
+ ../Inc
+ ../Inc
+ ../Inc
+ /usr/include/newlib/nano
+ /usr/include/newlib/nano
+ /usr/include/newlib/nano
+ /usr/lib/gcc/arm-none-eabi/13.2.1/include
+ /usr/lib/gcc/arm-none-eabi/13.2.1/include
+ /usr/lib/gcc/arm-none-eabi/13.2.1/include
+ /usr/lib/gcc/arm-none-eabi/13.2.1/include-fixed
+ /usr/lib/gcc/arm-none-eabi/13.2.1/include-fixed
+ /usr/lib/gcc/arm-none-eabi/13.2.1/include-fixed
+ /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/include
+ /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/include
+ /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/include
+End of search list.
+End of search list.
+End of search list.
+Compiler executable checksum: 3dedaaa4c0ce80076a39ed0b54adff9d
+Compiler executable checksum: 3dedaaa4c0ce80076a39ed0b54adff9d
+Compiler executable checksum: 3dedaaa4c0ce80076a39ed0b54adff9d
+COLLECT_GCC_OPTIONS='-mcpu=cortex-m4' '-std=gnu11' '-g3' '-D' 'DEBUG' '-D' 'STM32' '-D' 'STM32F4' '-D' 'STM32F407VGTx' '-c' '-I' '../Inc' '-O0' '-ffunction-sections' '-fdata-sections' '-Wall' '-v' '-fstack-usage' '-MMD' '-MP' '-MF' 'Src/main.d' '-MT' 'Src/main.o' '-specs=nano.specs' '-mfloat-abi=soft' '-mthumb' '-o' 'Src/main.o' '-mlibarch=armv7e-m' '-march=armv7e-m' '-dumpdir' 'Src/'
+ /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/bin/as -v -I ../Inc -march=armv7e-m -mfloat-abi=soft -meabi=5 -o Src/main.o /tmp/ccJXF6OX.s
+GNU assembler version 2.42 (arm-none-eabi) using BFD version (2.42-1ubuntu1+23) 2.42
+MAKEFLAGS= -j16 
+COMPILER_PATH=/usr/lib/gcc/arm-none-eabi/13.2.1/:/usr/lib/gcc/arm-none-eabi/13.2.1/:/usr/lib/gcc/arm-none-eabi/:/usr/lib/gcc/arm-none-eabi/13.2.1/:/usr/lib/gcc/arm-none-eabi/:/usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/bin/
+LIBRARY_PATH=/usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/:/usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/:/usr/lib/gcc/arm-none-eabi/13.2.1/:/usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/
+COLLECT_GCC_OPTIONS='-mcpu=cortex-m4' '-std=gnu11' '-g3' '-D' 'DEBUG' '-D' 'STM32' '-D' 'STM32F4' '-D' 'STM32F407VGTx' '-c' '-I' '../Inc' '-O0' '-ffunction-sections' '-fdata-sections' '-Wall' '-v' '-fstack-usage' '-MMD' '-MP' '-MF' 'Src/main.d' '-MT' 'Src/main.o' '-specs=nano.specs' '-mfloat-abi=soft' '-mthumb' '-o' 'Src/main.o' '-mlibarch=armv7e-m' '-march=armv7e-m' '-dumpdir' 'Src/main.'
+COLLECT_GCC_OPTIONS='-mcpu=cortex-m4' '-std=gnu11' '-g3' '-D' 'DEBUG' '-D' 'STM32' '-D' 'STM32F4' '-D' 'STM32F407VGTx' '-c' '-I' '../Inc' '-O0' '-ffunction-sections' '-fdata-sections' '-Wall' '-v' '-fstack-usage' '-MMD' '-MP' '-MF' 'Src/sysmem.d' '-MT' 'Src/sysmem.o' '-specs=nano.specs' '-mfloat-abi=soft' '-mthumb' '-o' 'Src/sysmem.o' '-mlibarch=armv7e-m' '-march=armv7e-m' '-dumpdir' 'Src/'
+ /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/bin/as -v -I ../Inc -march=armv7e-m -mfloat-abi=soft -meabi=5 -o Src/sysmem.o /tmp/ccohbqNs.s
+GNU assembler version 2.42 (arm-none-eabi) using BFD version (2.42-1ubuntu1+23) 2.42
+MAKEFLAGS= -j16 
+COMPILER_PATH=/usr/lib/gcc/arm-none-eabi/13.2.1/:/usr/lib/gcc/arm-none-eabi/13.2.1/:/usr/lib/gcc/arm-none-eabi/:/usr/lib/gcc/arm-none-eabi/13.2.1/:/usr/lib/gcc/arm-none-eabi/:/usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/bin/
+LIBRARY_PATH=/usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/:/usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/:/usr/lib/gcc/arm-none-eabi/13.2.1/:/usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/
+COLLECT_GCC_OPTIONS='-mcpu=cortex-m4' '-std=gnu11' '-g3' '-D' 'DEBUG' '-D' 'STM32' '-D' 'STM32F4' '-D' 'STM32F407VGTx' '-c' '-I' '../Inc' '-O0' '-ffunction-sections' '-fdata-sections' '-Wall' '-v' '-fstack-usage' '-MMD' '-MP' '-MF' 'Src/sysmem.d' '-MT' 'Src/sysmem.o' '-specs=nano.specs' '-mfloat-abi=soft' '-mthumb' '-o' 'Src/sysmem.o' '-mlibarch=armv7e-m' '-march=armv7e-m' '-dumpdir' 'Src/sysmem.'
+COLLECT_GCC_OPTIONS='-mcpu=cortex-m4' '-std=gnu11' '-g3' '-D' 'DEBUG' '-D' 'STM32' '-D' 'STM32F4' '-D' 'STM32F407VGTx' '-c' '-I' '../Inc' '-O0' '-ffunction-sections' '-fdata-sections' '-Wall' '-v' '-fstack-usage' '-MMD' '-MP' '-MF' 'Src/syscalls.d' '-MT' 'Src/syscalls.o' '-specs=nano.specs' '-mfloat-abi=soft' '-mthumb' '-o' 'Src/syscalls.o' '-mlibarch=armv7e-m' '-march=armv7e-m' '-dumpdir' 'Src/'
+ /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/bin/as -v -I ../Inc -march=armv7e-m -mfloat-abi=soft -meabi=5 -o Src/syscalls.o /tmp/cc8bs7I1.s
+GNU assembler version 2.42 (arm-none-eabi) using BFD version (2.42-1ubuntu1+23) 2.42
+MAKEFLAGS= -j16 
+COMPILER_PATH=/usr/lib/gcc/arm-none-eabi/13.2.1/:/usr/lib/gcc/arm-none-eabi/13.2.1/:/usr/lib/gcc/arm-none-eabi/:/usr/lib/gcc/arm-none-eabi/13.2.1/:/usr/lib/gcc/arm-none-eabi/:/usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/bin/
+LIBRARY_PATH=/usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/:/usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/:/usr/lib/gcc/arm-none-eabi/13.2.1/:/usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/
+COLLECT_GCC_OPTIONS='-mcpu=cortex-m4' '-std=gnu11' '-g3' '-D' 'DEBUG' '-D' 'STM32' '-D' 'STM32F4' '-D' 'STM32F407VGTx' '-c' '-I' '../Inc' '-O0' '-ffunction-sections' '-fdata-sections' '-Wall' '-v' '-fstack-usage' '-MMD' '-MP' '-MF' 'Src/syscalls.d' '-MT' 'Src/syscalls.o' '-specs=nano.specs' '-mfloat-abi=soft' '-mthumb' '-o' 'Src/syscalls.o' '-mlibarch=armv7e-m' '-march=armv7e-m' '-dumpdir' 'Src/syscalls.'
+arm-none-eabi-gcc -o "helloworld.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/athul-muralidhar/udemy-embedded-c-course/target/helloworld/STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="helloworld.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: helloworld.elf
+ 
 arm-none-eabi-size  helloworld.elf 
+arm-none-eabi-objdump -h -S helloworld.elf  > "helloworld.list"
    text	   data	    bss	    dec	    hex	filename
-   3376	     92	   1900	   5368	   14f8	helloworld.elf
+   4088	     92	   1900	   6080	   17c0	helloworld.elf
 Finished building: default.size.stdout
  
-23:30:53 **** Incremental Build of configuration Debug for project helloworld ****
-make -j16 all 
-arm-none-eabi-size  helloworld.elf 
-   text	   data	    bss	    dec	    hex	filename
-   3376	     92	   1900	   5368	   14f8	helloworld.elf
-Finished building: default.size.stdout
+Finished building: helloworld.list
  
-23:33:47 **** Incremental Build of configuration Debug for project helloworld ****
+21:39:04 **** Incremental Build of configuration Debug for project helloworld ****
 make -j16 all 
 arm-none-eabi-size  helloworld.elf 
    text	   data	    bss	    dec	    hex	filename
-   3376	     92	   1900	   5368	   14f8	helloworld.elf
-Finished building: default.size.stdout
- 
-23:55:10 **** Incremental Build of configuration Debug for project helloworld ****
-make -j16 all 
-arm-none-eabi-size  helloworld.elf 
-   text	   data	    bss	    dec	    hex	filename
-   3376	     92	   1900	   5368	   14f8	helloworld.elf
+   4088	     92	   1900	   6080	   17c0	helloworld.elf
 Finished building: default.size.stdout
  
