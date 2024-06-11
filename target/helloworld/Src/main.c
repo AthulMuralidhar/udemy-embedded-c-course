@@ -26,9 +26,9 @@
 
 /*
  * Problems:
- * - this version of stm32ide does now come with proper support for gdb - the only thing to do then is use a local toolchain
+ * - this version of stm32ide does now come with proper support for gdb - the only thing to do then is use a local tool chain
  * - this can be done by going to window > preferences - a window appears
- * - in the search bar type tool chain manageer - you should see a side bar menu under stm32cube
+ * - in the search bar type tool chain manager - you should see a side bar menu under stm32cube
  * - click on add local
  * Assuming you already have arm-none-eabi installed, open a terminal and run which arm-none-eabi-gcc to get its location. Here it is under /usr/bin.
  * On the Toolchain Manager, click “Add Local…” button on the right, give it some name, leave the default arm-none-eabi- prefix as it is,
