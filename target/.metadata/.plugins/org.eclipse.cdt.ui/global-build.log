@@ -1,80 +1,46 @@
-13:24:57 **** Incremental Build of configuration Debug for project add ****
-make -j16 all 
-arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f407vgtx.d" -MT"Startup/startup_stm32f407vgtx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Startup/startup_stm32f407vgtx.o" "../Startup/startup_stm32f407vgtx.s"
-arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
-arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/syscalls.o"
-arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/sysmem.o"
-arm-none-eabi-gcc -o "add.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/athul-muralidhar/udemy-embedded-c-course/target/add/STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="add.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: add.elf
+15:31:43 **** Incremental Build of configuration Debug for project average ****
+make all 
+Building target: average
+Invoking: Cross GCC Linker
+gcc  -o "average" ./.metadata/.plugins/org.eclipse.cdt.managedbuilder.core/spec.o  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./main.o   
+Finished building target: average
  
-arm-none-eabi-size  add.elf 
-arm-none-eabi-objdump -h -S add.elf  > "add.list"
-   text	   data	    bss	    dec	    hex	filename
-   7344	    100	   1900	   9344	   2480	add.elf
-Finished building: default.size.stdout
+15:32:57 **** Incremental Build of configuration Debug for project average ****
+make all 
+make: Nothing to be done for 'all'.
+15:33:47 **** Incremental Build of configuration Debug for project average ****
+make all 
+Building file: ../main.c
+Invoking: Cross GCC Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+Finished building: ../main.c
  
-Finished building: add.list
+Building target: average
+Invoking: Cross GCC Linker
+gcc  -o "average" ./.metadata/.plugins/org.eclipse.cdt.managedbuilder.core/spec.o  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./main.o   
+Finished building target: average
  
-13:31:03 **** Incremental Build of configuration Debug for project add ****
-make -j16 all 
-arm-none-eabi-size  add.elf 
-   text	   data	    bss	    dec	    hex	filename
-   7344	    100	   1900	   9344	   2480	add.elf
-Finished building: default.size.stdout
+15:34:21 **** Incremental Build of configuration Debug for project average ****
+make all 
+Building file: ../main.c
+Invoking: Cross GCC Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+Finished building: ../main.c
  
-14:01:33 **** Incremental Build of configuration Debug for project add ****
-make -j16 all 
-arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
-arm-none-eabi-gcc -o "add.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/athul-muralidhar/udemy-embedded-c-course/target/add/STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="add.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: add.elf
+Building target: average
+Invoking: Cross GCC Linker
+gcc  -o "average" ./.metadata/.plugins/org.eclipse.cdt.managedbuilder.core/spec.o  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./main.o   
+Finished building target: average
  
-arm-none-eabi-size  add.elf 
-arm-none-eabi-objdump -h -S add.elf  > "add.list"
-   text	   data	    bss	    dec	    hex	filename
-   7344	    100	   1900	   9344	   2480	add.elf
-Finished building: default.size.stdout
+15:34:40 **** Incremental Build of configuration Debug for project average ****
+make all 
+Building file: ../main.c
+Invoking: Cross GCC Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+Finished building: ../main.c
  
-Finished building: add.list
- 
-14:16:53 **** Incremental Build of configuration Debug for project add ****
-make -j16 all 
-arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
-arm-none-eabi-gcc -o "add.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/athul-muralidhar/udemy-embedded-c-course/target/add/STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="add.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: add.elf
- 
-arm-none-eabi-size  add.elf 
-arm-none-eabi-objdump -h -S add.elf  > "add.list"
-   text	   data	    bss	    dec	    hex	filename
-   7344	    100	   1900	   9344	   2480	add.elf
-Finished building: default.size.stdout
- 
-Finished building: add.list
- 
-14:22:22 **** Incremental Build of configuration Debug for project add ****
-make -j16 all 
-arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
-arm-none-eabi-gcc -o "add.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/athul-muralidhar/udemy-embedded-c-course/target/add/STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="add.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: add.elf
- 
-arm-none-eabi-size  add.elf 
-arm-none-eabi-objdump -h -S add.elf  > "add.list"
-   text	   data	    bss	    dec	    hex	filename
-   7344	    100	   1900	   9344	   2480	add.elf
-Finished building: default.size.stdout
- 
-Finished building: add.list
- 
-14:29:23 **** Incremental Build of configuration Debug for project add ****
-make -j16 all 
-arm-none-eabi-size  add.elf 
-   text	   data	    bss	    dec	    hex	filename
-   7344	    100	   1900	   9344	   2480	add.elf
-Finished building: default.size.stdout
- 
-14:34:02 **** Incremental Build of configuration Debug for project add ****
-make -j16 all 
-arm-none-eabi-size  add.elf 
-   text	   data	    bss	    dec	    hex	filename
-   7344	    100	   1900	   9344	   2480	add.elf
-Finished building: default.size.stdout
+Building target: average
+Invoking: Cross GCC Linker
+gcc  -o "average" ./.metadata/.plugins/org.eclipse.cdt.managedbuilder.core/spec.o  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./main.o   
+Finished building target: average
  
