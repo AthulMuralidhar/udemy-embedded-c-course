@@ -6990,3 +6990,24 @@ java.lang.IllegalStateException: Disconnected before saving. https://bugs.eclips
 		at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:5039)
 		at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4519)
 		... 22 more
+!SESSION 2024-06-14 14:04:45.353 -----------------------------------------------
+eclipse.buildId=Version 1.15.1
+java.version=17.0.8.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.core.resources 2 10035 2024-06-14 14:04:46.584
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2024-06-14 14:04:50.031
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-06-14 14:04:50.032
+!MESSAGE Log4j2 initialized with config file /home/athul-muralidhar/udemy-embedded-c-course/target/.metadata/.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-06-14 14:04:54.952
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY net.sourceforge.vrapper.eclipse 1 0 2024-06-14 14:04:57.915
+!MESSAGE No .vrapperrc or _vrapperrc found.
