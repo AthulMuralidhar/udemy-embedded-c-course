@@ -1,3 +1,4 @@
+
 #include <stdint.h>
 #include <stdio.h>
 
@@ -52,16 +53,18 @@ int main() {
     
     printPacket(&packet);
     
+    printf("size of struct Packet: %lu bytes\n", sizeof(packet));
+    
     return 0;
 }
 
 
 void printPacket(const Packet *packet) {
-    printf("packt.crc: %x\n", packet-> CRC);
-    printf("packt.payload: %x\n", packet-> payload);
-    printf("packt.bat: %x\n", packet-> bat);
-    printf("packt.sensor: %x\n", packet-> sensor);
-    printf("packt.longAddr: %x\n", packet-> longAddr);
-    printf("packt.longAddr: %x\n", packet-> shortAddr);
-    printf("packt.longAddr: %x\n", packet-> addrMode);
+    printf("packt.crc: %#x\n", packet-> CRC);
+    printf("packt.payload: %#x\n", packet-> payload);
+    printf("packt.bat: %#x\n", packet-> bat);
+    printf("packt.sensor: %#x\n", packet-> sensor);
+    printf("packt.longAddr: %#x\n", packet-> longAddr);
+    printf("packt.shortAddr: %#x\n", packet-> shortAddr);
+    printf("packt.addrMode: %#x\n", packet-> addrMode);
 }
