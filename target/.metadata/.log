@@ -7401,3 +7401,15 @@ Command-line arguments:  -os linux -ws gtk -arch x86_64
 
 !ENTRY net.sourceforge.vrapper.eclipse 1 0 2024-07-14 20:13:09.179
 !MESSAGE No .vrapperrc or _vrapperrc found.
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-07-14 22:28:02.367
+!MESSAGE Indexed 'led-toggle-with-macros' (3 sources, 52 headers) in 0.302 sec: 2,062 declarations; 2,789 references; 0 unresolved inclusions; 2 syntax errors; 2 unresolved names (0.041%)
+
+!ENTRY net.sourceforge.vrapper.eclipse 1 0 2024-07-14 22:29:10.270
+!MESSAGE No .vrapperrc or _vrapperrc found.
+
+!ENTRY net.sourceforge.vrapper.eclipse 1 0 2024-07-14 22:29:21.455
+!MESSAGE No .vrapperrc or _vrapperrc found.
+
+!ENTRY net.sourceforge.vrapper.eclipse 1 0 2024-07-14 22:39:52.432
+!MESSAGE No .vrapperrc or _vrapperrc found.
